@@ -27,7 +27,7 @@ jobs:
 
       - name: Build executable
         run: |
-          uv run pyinstaller --onefile --windowed --add-data "assets:assets" --name "Galaxy Wars" src/galaxy-wars.py
+          ./scripts/build.sh
           zip -9 -r -q dist/galaxy-wars-macos.zip dist/Galaxy\ Wars.app
 
       - name: Uploading app
