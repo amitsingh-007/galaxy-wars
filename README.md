@@ -1,5 +1,7 @@
 # Galaxy Wars
 
+<img src="./icons/macos-512.png" alt="galaxy wars logo" style="width:100px;" />
+
 This was my second year project.
 
 This is a fast-paced arcade game where you dodge and destroy asteroids to survive. Collect power-ups to boost your health and weapon enhancers to unleash double firepower. Score points by blasting asteroids—the smaller they are, the more points you earn. Lose all health and lives, and it’s GAME OVER!
