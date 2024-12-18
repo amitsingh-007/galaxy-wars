@@ -2,7 +2,7 @@ name: Release CI
 on:
   push:
     branches:
-      - 'main'
+      - "main"
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
@@ -27,7 +27,7 @@ jobs:
 
       - name: Build executable
         run: |
-          uv run pyinstaller --onefile --windowed --add-data "im:im" --add-data "snd:snd" --name "Galaxy Wars" galaxy-wars.py
+          uv run pyinstaller --onefile --windowed --add-data "assets:assets" --name "Galaxy Wars" src/galaxy-wars.py
           zip -9 -r -q dist/galaxy-wars-macos.zip dist/Galaxy\ Wars.app
 
       - name: Uploading app
@@ -54,8 +54,8 @@ jobs:
         uses: amitsingh-007/next-release-tag@v6.1.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          tag_prefix: 'v'
-          tag_template: 'yy.mm.i'
+          tag_prefix: "v"
+          tag_template: "yy.mm.i"
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
