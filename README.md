@@ -15,4 +15,5 @@ This is a fast-paced arcade game where you dodge and destroy asteroids to surviv
 1. Install [uv](https://docs.astral.sh/uv/).
 2. Optional: `uv python install`
 3. Run `uv sync --all-extras --dev` to install project dependencies.
-4. Build executable: `./scripts/build.sh`
+4. Run in dev mode: `./scripts/dev.sh`. Run `chmod 700 ./scripts/dev.sh` if you get permission error.
+4. Build executable file: `./scripts/build.sh`. Run `chmod 700 ./scripts/build.sh` if you get permission error.

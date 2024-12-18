@@ -2,8 +2,8 @@ import pygame
 import random
 from os import path
 
-sound_dir = path.join(path.dirname(__file__), 'assets', 'sound')
-img_dir = path.join(path.dirname(__file__), 'assets', 'image')
+sound_dir = path.join(path.dirname(__file__), '..', 'assets', 'sound')
+img_dir = path.join(path.dirname(__file__), '..', 'assets', 'image')
 
 WHITE = (255, 255, 255)
 GREEN = (0, 255, 0)
