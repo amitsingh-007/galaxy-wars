@@ -1,1 +1,1 @@
-uv run src/galaxy-wars.py
+uv run --env-file .env.local src/galaxy-wars.py
